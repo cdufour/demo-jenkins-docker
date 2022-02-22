@@ -2,6 +2,7 @@ FROM node:14-alpine
 
 WORKDIR app
 
-COPY *.js .
+COPY index.js .
+COPY server.js .
 
 CMD ["node", "server.js"]
